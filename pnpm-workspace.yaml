@@ -1,3 +1,7 @@
-"packages" : [
-  "packages/*"
-]
+packages: 
+  - 'packages/*'
+
+options: 
+  git-checks: false
+  strict-peer-dependencies: false
+  prefer-workspace-packages: true

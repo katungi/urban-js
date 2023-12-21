@@ -10,7 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "epic-ui": "workspace:*",
+    "epic-ui": "workspace:epic-ui",
+    "epic-router": "workspace:epic-router",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.1"

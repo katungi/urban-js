@@ -22,7 +22,8 @@ importers:
       '@typescript-eslint/eslint-plugin': ^6.14.0
       '@typescript-eslint/parser': ^6.14.0
       '@vitejs/plugin-react-swc': ^3.5.0
-      epic-ui: workspace:*
+      epic-router: workspace:epic-router
+      epic-ui: workspace:epic-ui
       eslint: ^8.55.0
       eslint-plugin-react-hooks: ^4.6.0
       eslint-plugin-react-refresh: ^0.4.5
@@ -32,6 +33,7 @@ importers:
       typescript: ^5.2.2
       vite: ^5.0.8
     dependencies:
+      epic-router: link:../epic-router
       epic-ui: link:../epic-ui
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0

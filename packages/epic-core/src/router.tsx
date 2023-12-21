@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 
 const ROUTES = import.meta.glob('/src/pages/**/[a-z[]*.{tsx,jsx}', { eager: true });
 
-console.log("Routes:::", ROUTES);
+console.log("Routes:::",ROUTES);
 
 // Add preserved routes like _app.tsx and 404.tsx.
 // TODO: add the default routes to the template, and write docs on the same.

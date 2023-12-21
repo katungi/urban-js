@@ -5,7 +5,6 @@
     "scripts": {
         "dev": "turbo run dev",
         "build": "turbo run build"
-
     },
     "dependencies": {
         "@changesets/cli": "^2.27.1",
@@ -15,7 +14,7 @@
         "pipeline": {
             "dev": {
                 "cache": false
-            }, 
+            },
             "build": {
                 "dependsOn": [
                     "^build"
@@ -27,6 +26,7 @@
         }
     },
     "devDependencies": {
-        "turbo": "^1.11.2"
+        "turbo": "^1.11.2",
+        "vite-plugin-dts": "^3.6.4"
     }
 }

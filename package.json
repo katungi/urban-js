@@ -1,32 +1,17 @@
 {
-    "name": "epic",
-    "license": "MIT",
-    "version": "1.0.0",
-    "scripts": {
-        "dev": "turbo run dev",
-        "build": "turbo run build"
-    },
-    "dependencies": {
-        "@changesets/cli": "^2.27.1",
-        "typescript": "^5.3.3"
-    },
-    "turbo": {
-        "pipeline": {
-            "dev": {
-                "cache": false
-            },
-            "build": {
-                "dependsOn": [
-                    "^build"
-                ],
-                "outputs": [
-                    "dist/**"
-                ]
-            }
-        }
-    },
-    "devDependencies": {
-        "turbo": "^1.11.2",
-        "vite-plugin-dts": "^3.6.4"
-    }
+  "name": "epic",
+  "license": "MIT",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build"
+  },
+  "dependencies": {
+    "@changesets/cli": "^2.27.1",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "turbo": "^1.11.2",
+    "vite-plugin-dts": "^3.6.4"
+  }
 }

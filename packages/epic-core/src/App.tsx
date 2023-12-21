@@ -5,7 +5,7 @@ function App() {
 
   return (
     <div>
-      <Button>Click Me</Button>
+      <Button>Click Me In Core</Button>
     </div>
   )
 }

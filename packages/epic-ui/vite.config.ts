@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react(), dts()],
   build: {
     lib: {
-      entry: './src/main.tsx', 
+      entry: './src/index.ts', 
       formats: ['cjs', 'es'], 
       fileName: (format) => `index.${format}.js`
     },

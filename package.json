@@ -1,0 +1,9 @@
+{
+    "name": "epic",
+    "license": "MIT",
+    "version": "1.0.0",
+    "dependencies": {
+        "@changesets/cli": "^2.27.1",
+        "typescript": "^5.3.3"
+    }
+}

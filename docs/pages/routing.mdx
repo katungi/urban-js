@@ -1,0 +1,75 @@
+# File-Based Routing (FBR) in Epic Framework
+
+## Introduction
+
+File-Based Routing (FBR) in the Epic Framework provides an intuitive and efficient way to manage routing in your web application. It is inspired by the `pages` directory structure in Next.js, offering similar functionalities with additional enhancements.
+
+## Table of Contents
+
+- [Basic Routing](#basic-routing)
+- [Dynamic Routes](#dynamic-routes)
+- [Nested Routes](#nested-routes)
+- [Handling 404 Errors](#handling-404-errors)
+
+## Basic Routing
+
+### Overview
+
+The basic routing in Epic is straightforward. Each file inside the `pages` directory corresponds to a route based on its file name.
+
+### Example
+
+- `pages/index.tsx` responds to the root URL `/`.
+- `pages/about.tsx` corresponds to `/about`.
+
+## Dynamic Routes
+
+### Overview
+
+Epic supports dynamic routing using special character files, similar to Next.js. It allows you to create routes based on file names enclosed in square brackets.
+
+### Usage
+
+- A file named `[slug].tsx` in the `pages` directory will match any path like `/anything`.
+- The value of the path segment will be passed to your page component as a prop.
+
+### Example
+
+- `pages/blog/[slug].tsx` will respond to any route like `/blog/my-first-post`.
+
+## Nested Routes
+
+### Overview
+
+Nested routing is seamlessly handled in the Epic Framework. This feature allows you to create a rich folder structure inside the `pages` directory to represent nested URLs.
+
+### Implementation
+
+- Create a folder for each segment of the path.
+- Place the corresponding `.tsx` file inside the folder.
+
+### Example
+
+- To create a route for `/blog/2020/post`, create the following structure:
+  - `pages/blog/2020/post.tsx`.
+
+## Handling 404 Errors
+
+### Custom 404 Pages
+
+Epic automatically supports 404 pages. Creating a `404.tsx` file in the `pages` directory will automatically make it the default 404 error page.
+
+### Implementation
+
+- Simply create a `404.tsx` file in the `pages` directory.
+- Style and customize this page as required.
+
+### Example
+
+- `pages/404.tsx` will be displayed for any unmatched route, providing a customized 404 error page.
+
+## Conclusion
+
+File-Based Routing in Epic offers a flexible and easy-to-use system for handling your application's routing needs. With support for dynamic and nested routes, along with custom 404 pages, it streamlines the development process and enhances the user experience.
+
+For more detailed examples and advanced usage, refer to our comprehensive guides and API documentation.

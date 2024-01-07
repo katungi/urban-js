@@ -17,7 +17,7 @@ const Hero = () => {
       <div className=" text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-left">
           <h1 className="text-4xl font-extrabold sm:text-5xl md:text-6xl">
-            Welcome to <span className="text-indigo-600">Epic Framework</span>
+            Welcome to <span className="text-indigo-600">Urban Framework</span>
           </h1>
           <p className="mt-6 max-w-md text-lg sm:max-w-lg sm:text-xl">
             Build fast, modern, and scalable applications with our intuitive framework designed for developers who demand the best performance and tooling.
@@ -65,7 +65,7 @@ const gridData = [
         emoji: "⚡️",
         title: "Blazing Fast",
         description:
-            "Deliver blazing-fast websites with Epic.js's built-in performance optimizations.",
+            "Deliver blazing-fast websites with Urban.js's built-in performance optimizations.",
     },
     {
         emoji: "🔮",

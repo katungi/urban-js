@@ -1,5 +1,5 @@
 export default {
-    logo: <span>Epic JS Documentation</span>,
+    logo: <span>Urban JS Documentation</span>,
     project: {
       link: 'https://github.com/katungi/epicjs'
     }

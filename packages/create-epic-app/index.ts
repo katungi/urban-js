@@ -1,1 +1,0 @@
-console.log('create-epic-app')

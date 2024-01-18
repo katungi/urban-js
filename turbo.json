@@ -1,15 +1,20 @@
 {
-  "pipeline": {
-    "dev": {
-      "cache": false
-    },
-    "build": {
-      "dependsOn": [
-        "^build"
-      ],
-      "outputs": [
-        "dist/**"
-      ]
-    }
-  }
+	"pipeline": {
+		"dev": {
+			"cache": false
+		},
+		"build": {
+			"dependsOn": ["^build"],
+			"outputs": ["dist/**"]
+		},
+		"lint": {
+			"dependsOn": ["^lint"]
+		}
+	},
+	"tasks": {
+		"lint": {
+			"command": "npx @biomejs/biome check --apply .",
+			"config": {}
+		}
+	}
 }

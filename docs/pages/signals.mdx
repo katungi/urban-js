@@ -1,0 +1,41 @@
+# Signals
+
+Urban-js now has signals!! :rocket:
+
+## Introduction
+Signals are trending at the moment as the most recommended way to manage global and local state.
+❤️
+There are even rumours that signals are being considered as a native JS language feature. 
+
+Our implementation of Signals is built on preact's implementation. To make it work, we use a Babel tranformer to convert our components to reactive components.
+
+To read more about what problems signals solve, check out [Introduction to Signals in Preact](https://preactjs.com/blog/introducing-signals/)
+
+## Usage
+
+Using signals is pretty simple. 
+
+ ```js
+import { useSignal } from "urban-core"
+
+ export default Home() {
+    const count = useSignal(0);
+   
+     <div>
+                <span className="text-underline mb-8">Signals Demo</span>
+                <p>
+                    <>Value: {count}</>
+                </p>
+                <button onClick={() => count.value++}>Increment</button>
+                <button onClick={() => count.value--}>Decrement</button>
+            </div>
+}
+```
+
+Yes, it's that simple. 
+
+We also export more powerful features like compute, useCompute and effect 
+
+Docs on the above are coming soon. 
+
+Meantime, ENJOY SIGNALS!

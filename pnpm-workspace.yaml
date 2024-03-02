@@ -1,8 +1,9 @@
-packages: 
-  - 'packages/*'
-  - 'docs/*'
+packages:
+  - "packages/*"
+  - "docs/*"
+  - "apps/*"
 
-options: 
+options:
   git-checks: false
   strict-peer-dependencies: false
   prefer-workspace-packages: true

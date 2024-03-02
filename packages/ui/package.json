@@ -1,0 +1,28 @@
+{
+  "name": "@urban/ui",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    "./button": {
+      "types": "./Button.tsx",
+      "default": "./dist/button.js"
+    }
+  },
+  "scripts": {
+    "dev": "pnpm run build -- --watch",
+    "build": "rollup --config"
+  },
+  "keywords": [],
+  "author": "",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/react": "^18.2.46",
+    "@types/react-dom": "^18.2.18",
+    "@urban/typescript-config": "*",
+    "eslint": "^8.56.0",
+    "react": "^18.2.0",
+    "rollup": "^4.9.2",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3"
+  }
+}

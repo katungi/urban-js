@@ -10,11 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "urban-ui": "workspace:urban-ui",
-    "urban-router": "workspace:urban-router",
+    "@preact/signals-react": "^2.0.0",
+    "@preact/signals-react-transform": "^0.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.21.1"
+    "react-router-dom": "^6.21.1",
+    "urban-router": "workspace:urban-router",
+    "urban-ui": "workspace:urban-ui",
+    "vite-plugin-babel": "^1.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",

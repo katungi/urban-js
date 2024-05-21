@@ -6,8 +6,8 @@ import { BrowserRouter } from 'react-router-dom';
 import { UrbanRouter } from 'urban-router'
 
 // TODO: Find a way to export a glob mechanism from the router package
-const Routes = import.meta.glob('/src/pages/[**/a-z[]*.{tsx,jsx}', { eager: true });
-const PRESERVED = import.meta.glob('/src/pages/(_app|404|_document).{tsx,jsx}', { eager: true });
+const Routes: Record<string, any>  = import.meta.glob('/src/pages/[**/a-z[]*.{tsx,jsx}', { eager: true });
+const PRESERVED: Record<string, any> = import.meta.glob('/src/pages/(_app|404|_document).{tsx,jsx}', { eager: true });
 
 console.log(PRESERVED)
 ReactDOM.createRoot(document.getElementById('root')!).render(

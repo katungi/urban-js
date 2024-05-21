@@ -1,1 +1,1 @@
-export { Router } from './router'
+export { Router as UrbanRouter } from './router'

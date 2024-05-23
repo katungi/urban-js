@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useSignal } from "../../utils/signals"
 
-export default function Home() {
+export default function App() {
     const count = useSignal(0);
 
     return (
